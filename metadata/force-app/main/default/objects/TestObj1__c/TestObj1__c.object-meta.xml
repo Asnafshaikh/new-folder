@@ -149,16 +149,16 @@
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>
-    <enableSearch>true</enableSearch>
+    <enableSearch>false</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <label>TestObj1</label>
     <nameField>
-        <label>TestObj Name</label>
+        <label>TestObj1 Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>TestObj1s</pluralLabel>
+    <pluralLabel>TestObj1</pluralLabel>
     <searchLayouts></searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

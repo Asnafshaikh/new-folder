@@ -26,9 +26,9 @@
         <closed>false</closed>
     </standardValue>
     <standardValue>
-        <fullName>Deferred2</fullName>
+        <fullName>Deferred</fullName>
         <default>false</default>
-        <label>Deferred222</label>
+        <label>Deferred</label>
         <closed>false</closed>
     </standardValue>
 </StandardValueSet>
