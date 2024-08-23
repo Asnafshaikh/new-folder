@@ -7,7 +7,6 @@
     <columns>InputRecordCount</columns>
     <columns>OutputRecordCount</columns>
     <columns>FailedRecordCount</columns>
-    <columns>Status</columns>
     <filterScope>Everything</filterScope>
     <label>All Tasks</label>
 </ListView>

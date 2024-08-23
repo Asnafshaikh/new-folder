@@ -136,7 +136,7 @@
             <title>Last 30 Days</title>
         </components>
     </middleSection>
-    <owner>drudman@prodly.co.appopsqa4</owner>
+    <owner>drudman@prodly.co.appopsqa15</owner>
     <rightSection>
         <columnSize>Medium</columnSize>
         <components>
@@ -303,7 +303,7 @@
             <useReportChart>false</useReportChart>
         </components>
     </rightSection>
-    <runningUser>drudman@prodly.co.appopsqa4</runningUser>
+    <runningUser>drudman@prodly.co.appopsqa15</runningUser>
     <textColor>#000000</textColor>
     <title>Adoption Dashboard</title>
     <titleColor>#000099</titleColor>

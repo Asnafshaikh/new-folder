@@ -7,5 +7,5 @@
         <operation>equals</operation>
         <value>ASG</value>
     </filters>
-    <label>Todos os itens de trabalho em aberto</label>
+    <label>All Open Work Items</label>
 </ListView>
