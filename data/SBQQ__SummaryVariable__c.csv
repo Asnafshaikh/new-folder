@@ -1,2 +1,5 @@
 Guid,Name,SBQQ__AggregateField__c,SBQQ__AggregateFunction__c,SBQQ__CombineWith__c,SBQQ__CompositeOperator__c,SBQQ__ConstraintField__c,SBQQ__FilterField__c,SBQQ__FilterValue__c,SBQQ__Operator__c,SBQQ__Scope__c,SBQQ__TargetObject__c,SBQQ__ValueElement__c
 15875b77-691b-4c0a-92f7-22da60a8a8e1,NEW VARIABLE,Quantity,Count,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,Quote,Product Option,#N/A
+24921220-93c7-4676-98e4-5c1b310d40d6,Sum or large turbines,Quantity,Sum,#N/A,#N/A,#N/A,Product Code,A-1000,equals,Quote,Product Option,#N/A
+507ce2aa-392f-4514-9aa1-fc24b974a508,Sum of Batteries,Quantity,Sum,#N/A,#N/A,#N/A,Product Family,Batteries,equals,Quote,Product Option,#N/A
+f74930c8-9334-4a31-bf1b-f17ebd54873a,Sum of small turbines,Quantity,Count,#N/A,#N/A,#N/A,Product Code,A-100,equals,Quote,Product Option,#N/A
