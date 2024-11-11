@@ -4,3 +4,4 @@ Guid,Name,SBQQ__AggregateField__c,SBQQ__AggregateFunction__c,SBQQ__CombineWith__
 507ce2aa-392f-4514-9aa1-fc24b974a508,Sum of Batteries,Quantity,Sum,#N/A,#N/A,#N/A,Product Family,Batteries,equals,Quote,Product Option,#N/A
 f74930c8-9334-4a31-bf1b-f17ebd54873a,Sum of small turbines,Quantity,Count,#N/A,#N/A,#N/A,Product Code,A-100,equals,Quote,Product Option,#N/A
 d4f1f22a-3f31-4142-ac68-e450c6cacab0,test,Quantity,Count,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,Quote,Product Option,#N/A
+ad751482-b53c-4118-943f-2681a5e8e7b7,Sum of INTELLIGENT OPTIMIZATION SERVICE LICENSE,Quantity,Sum,#N/A,#N/A,#N/A,Product Code,L-100,equals,Quote,Quote Line,#N/A
