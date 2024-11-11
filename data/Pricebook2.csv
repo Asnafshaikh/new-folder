@@ -1,2 +1,21 @@
 Guid,Name,IsActive,Description
 c57907ab-1522-4faa-b7ce-6ac0a4eadb81,test,false,#N/A
+00000001-c64a-496c-9b10-53674a81ae2a,Standard Price Book,false,#N/A
+5420e0d8-eb50-47d4-8bb0-0a2a50ebb6bb,Cirrus Price Book,true,#N/A
+5e0a85c3-4cd9-455d-a9fd-d6bd5b6031bc,Cirrus Silver Price Book,true,#N/A
+eafebbdd-2d98-4bfa-b1be-5f3e72ee9b7c,CPQ Products,true,Products to demonstrate CPQ
+b21fc335-eff8-437e-ba86-ab157a362326,Global Price Book*,true,This is the Price Book for all regions.
+fbafd0d8-f366-466e-967d-1e3b67a2cad9,Recommended Retail Price,false,RRP - No Discount
+95b3414d-e219-4d49-a7a6-b476b73482ba,Test1_edit,false,#N/A
+de949c68-3c34-4149-b5b9-6257bf49e948,Test Pricebook,true,#N/A
+a845d278-b1f1-49db-ab71-9e232f28dc77,Pricebook 1,true,any
+26d3571f-adde-40c4-a9a9-e945916d07aa,Price 1,true,#N/A
+98a4eab0-34cc-46b9-a1db-c7adf7a6101c,Price 2,true,#N/A
+99cb7d24-255e-4d79-8031-1506e083a0df,Price 3,false,#N/A
+d8db1799-835b-443f-a5de-38d67f7c737f,PriceB2,true,aqany
+ddf01bbd-a7cf-46de-8751-7700ecf2691b,PB 25,true,#N/A
+a6b0bc00-edd4-490c-947c-30256b8576f8,TEST ASNAF,true,#N/A
+d33c1404-49c7-4386-a45b-628bdc37cb8e,TEST PRICE BOOK,false,#N/A
+10e7115d-6ead-4b6a-bf1b-86a4880f4a6a,Test3_edit,false,#N/A
+32160e8c-698b-4a15-b5bb-172e2b73d52a,PriceB1,true,any desc
+b1580fb6-af94-4684-82c9-b1466c7f62a7,test2_edit,false,#N/A
