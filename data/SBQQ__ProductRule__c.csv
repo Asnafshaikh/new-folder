@@ -1,0 +1,11 @@
+Guid,Name,SBQQ__Active__c,SBQQ__AdvancedCondition__c,SBQQ__ConditionsMet__c,SBQQ__ErrorMessage__c,SBQQ__EvaluationEvent__c,SBQQ__EvaluationOrder__c,SBQQ__LookupMessageField__c,SBQQ__LookupObject__c,SBQQ__LookupProductField__c,SBQQ__LookupRequiredField__c,SBQQ__LookupTypeField__c,SBQQ__Scope__c,SBQQ__Type__c,Picklist_Price_rule_AL__c
+01b042d7-9cd3-400d-aa46-63b141f7ee88,Rule 1,false,#N/A,Any,#N/A,Load,1.0,#N/A,#N/A,#N/A,#N/A,#N/A,Product,Selection,#N/A
+d6da624f-b34c-4bd0-b977-241582b07b30,mooverTest,false,#N/A,All,messae,Save,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,Product,Validation,#N/A
+db2ee4b1-3808-4cee-9d20-1751cebad910,Rule1,true,#N/A,All,any,Save,1.0,#N/A,#N/A,#N/A,#N/A,#N/A,Quote,Validation,#N/A
+82d46a7f-5e8a-428c-baf7-28a78aeb6ed4,TEST,true,#N/A,Any,#N/A,Save,#N/A,SBQQ__Message__c,SBQQ__LookupData__c,SBQQ__Product__c,SBQQ__Required__c,SBQQ__Type__c,Product,Selection,#N/A
+f0380a7c-6736-4d93-8262-6cfb788d339d,Select Standard Support,true,#N/A,All,#N/A,Always,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,Product,Selection,#N/A
+cc63e3b7-ec8b-4243-bc5b-53b0d7e17f0b,test1,false,#N/A,Any,#N/A,Always,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,Product,Selection,#N/A
+73488d21-b66c-44ce-a442-112c5cccda6c,Low Battery recommendation for small turbine,true,#N/A,All,A low capacity battery is recommended with a purchase of a small turbine. Do you want to continue with your selection?,Save,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,Product,Alert,#N/A
+1fbc3b83-db34-4003-8d05-d2bb260591db,Large battery capacity recommendation for Large Turbine,true,#N/A,All,A high capacity battery is recommended with a purchase of a large turbine. Do you want to continue with your selection?,Save,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,Product,Alert,#N/A
+af5156a3-b648-404e-a91c-699dd4106e67,Productrule1,true,(1 AND 2) OR (3 AND 4),All,any message rule here,Save,1.0,SBQQ__Message__c,SBQQ__LookupData__c,SBQQ__Product__c,SBQQ__Required__c,SBQQ__Type__c,Product,Alert,b
+eacc8e10-eb91-46b2-96d7-183f6db52932,Select Premium Support,true,#N/A,All,#N/A,Always,#N/A,#N/A,#N/A,#N/A,#N/A,#N/A,Product,Selection,#N/A
