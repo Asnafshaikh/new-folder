@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canvasConfig>
+        <accessMethod>Post</accessMethod>
+        <canvasUrl>https://f6b5-2603-9000-9702-d815-8921-fb10-b48d-4376.ngrok-free.app/canvas</canvasUrl>
+        <locations>Visualforce</locations>
+        <locations>Aura</locations>
+        <samlInitiationMethod>None</samlInitiationMethod>
+    </canvasConfig>
+    <contactEmail>jaagaard@prodly.co</contactEmail>
+    <label>john&apos;s localAppOpps</label>
+    <oauthConfig>
+        <callbackUrl>https://f6b5-2603-9000-9702-d815-8921-fb10-b48d-4376.ngrok-free.app/oauth/callback</callbackUrl>
+        <consumerKey>3MVG9JEx.BE6yifP9GaXQ0R9XnviAPhKboS6763hQqGXotMD0lIOo1aoopoWML4KEvBxc4_eDNYgpwzc0TF2D</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+        <isPkceRequired>false</isPkceRequired>
+        <isRefreshTokenRotationEnabled>false</isRefreshTokenRotationEnabled>
+        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <isSecretRequiredForTokenExchange>false</isSecretRequiredForTokenExchange>
+        <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <isTokenExchangeFlowEnabled>false</isTokenExchangeFlowEnabled>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <profileName>Standard</profileName>
+    <profileName>Clone standard</profileName>
+    <profileName>Standard User (Custom)</profileName>
+    <profileName>System Administrator</profileName>
+    <profileName>Standard User</profileName>
+    <profileName>CloneST2</profileName>
+    <profileName>Andreana</profileName>
+    <profileName>Andreana Profile</profileName>
+    <profileName>Andreanas Profile</profileName>
+    <profileName>AndreanasProfile</profileName>
+    <profileName>anpl</profileName>
+    <profileName>And</profileName>
+    <profileName>myprofile</profileName>
+    <profileName>SysAdmDep</profileName>
+    <profileName>Sys Admin Cloned</profileName>
+</ConnectedApp>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RemoteSiteSetting xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Prodly AppOps connection &apos;tEST sCRATCH ASNAF 1234567890-=!@#$%^&amp;*()_:?&gt;&lt;&quot;{}|~&apos; used to retrieve the org’s schema.</description>
+    <disableProtocolSecurity>false</disableProtocolSecurity>
+    <isActive>true</isActive>
+    <url>https://coldbrew-flatwhite-7642.scratch.my.salesforce.com</url>
+</RemoteSiteSetting>

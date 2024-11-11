@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canvasConfig>
+        <accessMethod>Post</accessMethod>
+        <canvasUrl>https://967b-62-228-120-240.ngrok-free.app/canvas</canvasUrl>
+        <locations>Visualforce</locations>
+        <locations>Aura</locations>
+        <samlInitiationMethod>None</samlInitiationMethod>
+    </canvasConfig>
+    <contactEmail>tkyprianou@prodly.co</contactEmail>
+    <label>AppopsReleaseLocal</label>
+    <oauthConfig>
+        <callbackUrl>https://967b-62-228-120-240.ngrok-free.app/oauth/callback</callbackUrl>
+        <consumerKey>3MVG9JEx.BE6yifP9GaXQ0R9Xntfu34DQKZeULu_nVfwpgiG2j0gevrDMp6N4a2ZYF2qQRULLyDiePDAcziO1</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+        <isPkceRequired>false</isPkceRequired>
+        <isRefreshTokenRotationEnabled>false</isRefreshTokenRotationEnabled>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <isSecretRequiredForTokenExchange>false</isSecretRequiredForTokenExchange>
+        <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <isTokenExchangeFlowEnabled>false</isTokenExchangeFlowEnabled>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <profileName>System Administrator</profileName>
+    <profileName>Chatter Free User</profileName>
+    <profileName>Andreana</profileName>
+    <profileName>Andreana Profile</profileName>
+    <profileName>Andreanas Profile</profileName>
+    <profileName>AndreanasProfile</profileName>
+    <profileName>anpl</profileName>
+    <profileName>And</profileName>
+    <profileName>myprofile</profileName>
+    <profileName>SysAdmDep</profileName>
+    <profileName>Sys Admin Cloned</profileName>
+</ConnectedApp>

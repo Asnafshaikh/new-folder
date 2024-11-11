@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RemoteSiteSetting xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Prodly connection &apos;Scr pack.meta.30d&apos; used to retrieve the org’s schema.</description>
+    <disableProtocolSecurity>false</disableProtocolSecurity>
+    <isActive>true</isActive>
+    <url>https://americano-newport-3487.scratch.my.salesforce.com</url>
+</RemoteSiteSetting>

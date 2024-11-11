@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canvasConfig>
+        <accessMethod>Post</accessMethod>
+        <canvasUrl>https://app-web-qa-3.prodly.co/canvas</canvasUrl>
+        <locations>Visualforce</locations>
+        <locations>Aura</locations>
+        <samlInitiationMethod>None</samlInitiationMethod>
+    </canvasConfig>
+    <contactEmail>drudman@prodly.co</contactEmail>
+    <label>Prodly AppOps QA3</label>
+    <oauthConfig>
+        <callbackUrl>https://localhost</callbackUrl>
+        <certificate>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</certificate>
+        <consumerKey>3MVG9JEx.BE6yifP9GaXQ0R9XnvmLQBzc3hwYQFWIPlZPuEywuSDCjaeh2FwBJc6FGD47w_Cgg4xIT9jJP9kH</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+        <isPkceRequired>false</isPkceRequired>
+        <isRefreshTokenRotationEnabled>false</isRefreshTokenRotationEnabled>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <isSecretRequiredForTokenExchange>false</isSecretRequiredForTokenExchange>
+        <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <isTokenExchangeFlowEnabled>false</isTokenExchangeFlowEnabled>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <profileName>Standard</profileName>
+    <profileName>Clone standard</profileName>
+    <profileName>Standard User (Custom)</profileName>
+    <profileName>System Administrator</profileName>
+    <profileName>Standard User</profileName>
+    <profileName>Standard Platform User</profileName>
+    <profileName>Dwight Schrute</profileName>
+    <profileName>CloneST2</profileName>
+    <profileName>Andreana</profileName>
+    <profileName>Andreana Profile</profileName>
+    <profileName>Andreanas Profile</profileName>
+    <profileName>AndreanasProfile</profileName>
+    <profileName>anpl</profileName>
+    <profileName>And</profileName>
+    <profileName>myprofile</profileName>
+    <profileName>SysAdmDep</profileName>
+    <profileName>Sys Admin Cloned</profileName>
+</ConnectedApp>

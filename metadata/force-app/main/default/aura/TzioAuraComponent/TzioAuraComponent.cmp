@@ -1,0 +1,6 @@
+<aura:component access="global" implements="flexipage:availableForAllPageTypes,force:appHostable">
+    <aura:attribute name="message" type="String" default="Hello from Aura Component!" />
+    <div class="slds-p-around_medium">
+        <h1>{!v.message}</h1>
+    </div>
+</aura:component>
