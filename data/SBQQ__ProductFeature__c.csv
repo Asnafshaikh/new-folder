@@ -1,0 +1,17 @@
+Guid,Name,SBQQ__Category__c,SBQQ__ConfigurationFieldSet__c,SBQQ__ConfiguredSKU__c,SBQQ__DiscountSchedule__c,SBQQ__DynamicProductFilterFieldSet__c,SBQQ__DynamicProductLookupFieldSet__c,SBQQ__MaxOptionCount__c,SBQQ__MinOptionCount__c,SBQQ__Number__c,SBQQ__OptionSelectionMethod__c
+755af971-d956-4cd6-8e05-38c0ef6ce731,Support,Core,#N/A,3baf773e-6066-4ff6-b76f-21bc0c2c6949,#N/A,#N/A,#N/A,#N/A,0.0,40.0,#N/A
+fe615a1b-e847-45fb-8a8b-9da231f5f57e,Feature 1,Hardware,#N/A,93c0aad4-5e90-42ab-8aea-d7a12fb569cc,#N/A,ConfiguratorFilter,ConfiguratorLookup,#N/A,1.0,123.0,Add
+9da787c2-3ff6-4bff-b0c8-291eac7716cb,Feature 1,Hardware,#N/A,d1708a47-3df0-42db-a85f-e019b8041b4d,#N/A,ConfiguratorFilter,ConfiguratorLookup,#N/A,1.0,123.0,Add
+9fcb4dfb-5291-4e66-9e20-52dafebc616c,Feature 1,Hardware,#N/A,47edb75f-fe0f-49f1-b774-b8b8e26af2f9,#N/A,ConfiguratorFilter,ConfiguratorLookup,#N/A,1.0,123.0,Add
+dee878ce-0456-458c-ad0c-0e887f76a987,Feature 1,Hardware,#N/A,5170a38d-e155-4b37-875d-ca17170ad99c,#N/A,ConfiguratorFilter,ConfiguratorLookup,#N/A,1.0,123.0,Add
+9e093d62-ecc3-4965-b1ee-90f80aaccfda,Accessories,Optional,#N/A,3baf773e-6066-4ff6-b76f-21bc0c2c6949,#N/A,#N/A,#N/A,#N/A,0.0,20.0,#N/A
+0cf44248-9ca3-4503-b3b1-b695a5a711d4,Feature 1,Hardware,#N/A,64f055d0-9afc-45e6-989e-b6efa4ea15af,#N/A,ConfiguratorFilter,ConfiguratorLookup,#N/A,1.0,123.0,Add
+dbb1f23c-28e9-4344-9f54-94d4e728889e,Software Licenses,Optional,#N/A,3baf773e-6066-4ff6-b76f-21bc0c2c6949,#N/A,#N/A,#N/A,#N/A,0.0,30.0,#N/A
+3ab1777e-25ce-4a1b-9bac-23c15cb23d47,Hardware,Core,#N/A,3baf773e-6066-4ff6-b76f-21bc0c2c6949,#N/A,#N/A,#N/A,1.0,1.0,10.0,#N/A
+e5950828-bdfd-47f7-85b6-031aee0f9f40,Equipment,#N/A,#N/A,91841d05-638e-4d68-a339-444cc04726bc,#N/A,#N/A,#N/A,#N/A,1.0,12.0,#N/A
+e0f0f0c0-d2d4-4ca0-8859-e7f48616c3c3,Beverages,#N/A,#N/A,62271d87-dff1-4354-95f3-194c1e20c7e7,#N/A,#N/A,#N/A,#N/A,1.0,10.0,#N/A
+35fa3904-468a-4019-a122-2717c0b52fa0,Services,#N/A,#N/A,91841d05-638e-4d68-a339-444cc04726bc,#N/A,#N/A,#N/A,#N/A,1.0,11.0,#N/A
+81ca11c1-b228-4792-a311-a8869002641e,TEST FEATURE,#N/A,#N/A,84ddf0aa-99c6-465c-a118-8343af3896a4,#N/A,#N/A,#N/A,#N/A,1.0,1.0,#N/A
+145c79fe-bfc1-46f6-9cb0-7ad1d0071df7,Equipment,#N/A,#N/A,62271d87-dff1-4354-95f3-194c1e20c7e7,#N/A,#N/A,#N/A,#N/A,1.0,12.0,#N/A
+520fe9ba-10ea-4bec-a6c5-b68c80ea786d,Services,#N/A,#N/A,62271d87-dff1-4354-95f3-194c1e20c7e7,#N/A,#N/A,#N/A,#N/A,0.0,11.0,#N/A
+6ce7181f-c576-4c47-bc53-1e0db1c8126b,Beverages,#N/A,#N/A,91841d05-638e-4d68-a339-444cc04726bc,#N/A,#N/A,#N/A,#N/A,1.0,10.0,#N/A
