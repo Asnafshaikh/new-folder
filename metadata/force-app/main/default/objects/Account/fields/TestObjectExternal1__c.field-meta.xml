@@ -9,5 +9,6 @@
     <relationshipLabel>Accounts</relationshipLabel>
     <relationshipName>Accounts1</relationshipName>
     <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
     <type>ExternalLookup</type>
 </CustomField>

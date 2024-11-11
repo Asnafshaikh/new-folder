@@ -129,5 +129,11 @@
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
     <externalSharingModel>Private</externalSharingModel>
+    <searchLayouts>
+        <customTabListAdditionalFields>TaskType</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Description</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>TaskType</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Description</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>Private</sharingModel>
 </CustomObject>

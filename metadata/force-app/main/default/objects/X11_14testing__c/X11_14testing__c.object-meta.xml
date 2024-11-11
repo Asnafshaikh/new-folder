@@ -158,7 +158,7 @@
         <label>11.14test Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>yyyy</pluralLabel>
+    <pluralLabel>yyyy1</pluralLabel>
     <searchLayouts></searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>

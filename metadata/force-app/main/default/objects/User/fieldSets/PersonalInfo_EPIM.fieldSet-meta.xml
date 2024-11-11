@@ -3,21 +3,6 @@
     <fullName>PersonalInfo_EPIM</fullName>
     <description>Fieldset for User Field Masking</description>
     <displayedFields>
-        <field>Division</field>
-        <isFieldManaged>true</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>GeocodeAccuracy</field>
-        <isFieldManaged>true</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>Name</field>
-        <isFieldManaged>true</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
         <field>EmployeeNumber</field>
         <isFieldManaged>true</isFieldManaged>
         <isRequired>false</isRequired>
@@ -149,6 +134,21 @@
     </displayedFields>
     <displayedFields>
         <field>Signature</field>
+        <isFieldManaged>true</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Division</field>
+        <isFieldManaged>true</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>GeocodeAccuracy</field>
+        <isFieldManaged>true</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>Name</field>
         <isFieldManaged>true</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>

@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
+        <fullName>Alert</fullName>
+        <description>Alert!</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>tbedikyan@prodly.co.qa3</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SUPPORTCaseResponsewithSolutionSAMPLE</template>
+    </alerts>
+    <alerts>
         <fullName>newWorkflowAction</fullName>
         <description>NEW EMAIL WORKFLOW ACTION</description>
         <protected>false</protected>
@@ -11,6 +22,27 @@
         <senderType>CurrentUser</senderType>
         <template>unfiled$public/ContactFollowUpSAMPLE</template>
     </alerts>
+    <fieldUpdates>
+        <fullName>AccFieldUpdate</fullName>
+        <field>Name</field>
+        <name>AccFieldUpdate</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <outboundMessages>
+        <fullName>Messane</fullName>
+        <apiVersion>60.0</apiVersion>
+        <endpointUrl>https://appopsqa3.lightning.force.com/lightning/n/PDRI__AppOpsRelease</endpointUrl>
+        <fields>AccountNumber</fields>
+        <fields>Id</fields>
+        <includeSessionId>false</includeSessionId>
+        <integrationUser>tbedikyan@prodly.co.qa3</integrationUser>
+        <name>Messane</name>
+        <protected>false</protected>
+        <useDeadLetterQueue>false</useDeadLetterQueue>
+    </outboundMessages>
     <rules>
         <fullName>AccountWorkflow</fullName>
         <active>false</active>
@@ -1257,4 +1289,17 @@
         <formula>false</formula>
         <triggerType>onCreateOnly</triggerType>
     </rules>
+    <tasks>
+        <fullName>FF</fullName>
+        <assignedTo>tbedikyan@prodly.co.qa3</assignedTo>
+        <assignedToType>user</assignedToType>
+        <description>comment</description>
+        <dueDateOffset>600</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.Date_time__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>FF</subject>
+    </tasks>
 </Workflow>

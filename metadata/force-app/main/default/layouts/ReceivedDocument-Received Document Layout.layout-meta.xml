@@ -36,6 +36,10 @@
                 <behavior>Required</behavior>
                 <field>Status</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>StatusReason</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>

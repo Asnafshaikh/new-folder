@@ -299,6 +299,10 @@
                 <behavior>Edit</behavior>
                 <field>wednesday__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>test_box__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns/>
         <style>TwoColumnsLeftToRight</style>

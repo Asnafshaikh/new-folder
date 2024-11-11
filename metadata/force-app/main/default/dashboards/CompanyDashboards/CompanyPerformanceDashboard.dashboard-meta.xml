@@ -188,7 +188,7 @@
             <useReportChart>false</useReportChart>
         </components>
     </middleSection>
-    <owner>drudman@prodly.co.appopsqa15</owner>
+    <owner>drudman@prodly.co.appopsqa3</owner>
     <rightSection>
         <columnSize>Medium</columnSize>
         <components>
@@ -250,7 +250,7 @@
             <useReportChart>false</useReportChart>
         </components>
     </rightSection>
-    <runningUser>drudman@prodly.co.appopsqa15</runningUser>
+    <runningUser>drudman@prodly.co.appopsqa3</runningUser>
     <textColor>#000000</textColor>
     <title>Company Performance Dashboard</title>
     <titleColor>#000099</titleColor>

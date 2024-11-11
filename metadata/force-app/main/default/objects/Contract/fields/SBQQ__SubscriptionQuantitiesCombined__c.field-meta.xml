@@ -5,7 +5,7 @@
     <deprecated>false</deprecated>
     <description>Select to combine quantities of Subscriptions for the same product into one line on Renewal Quotes and Legacy Amendments.</description>
     <externalId>false</externalId>
-    <inlineHelpText>Select to combine quantities of Subscriptions for the same product into one line on Renewal Quotes and Legacy Amendments.</inlineHelpText>
+    <inlineHelpText>Select to combine quantities of Subscriptions for the same product into one line on Renewal Quotes and Amendments.</inlineHelpText>
     <label>Combine Subscription Quantities</label>
     <trackHistory>false</trackHistory>
     <type>Checkbox</type>

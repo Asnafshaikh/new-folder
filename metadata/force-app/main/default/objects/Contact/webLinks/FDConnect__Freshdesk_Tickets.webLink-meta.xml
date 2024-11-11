@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FDConnect__Freshdesk_Tickets</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Freshdesk Tickets</masterLabel>
+    <openType>noSidebar</openType>
+    <page>FDConnect__FreshdeskAction</page>
+    <protected>false</protected>
+</WebLink>

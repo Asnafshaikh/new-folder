@@ -87,7 +87,7 @@
     </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
-        <relatedList>test__c.Test_Object_lookup__c</relatedList>
+        <relatedList>Test__c.Test_Object_lookup__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
