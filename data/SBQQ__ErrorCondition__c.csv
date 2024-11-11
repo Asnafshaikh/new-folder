@@ -1,0 +1,10 @@
+Guid,SBQQ__Rule__c,SBQQ__FilterType__c,SBQQ__FilterValue__c,SBQQ__FilterVariable__c,SBQQ__Index__c,SBQQ__Operator__c,SBQQ__TestedField__c,SBQQ__TestedObject__c,SBQQ__TestedVariable__c
+76add761-1c2a-4aa4-93ff-99163fa1f277,82d46a7f-5e8a-428c-baf7-28a78aeb6ed4,Value,0,#N/A,#N/A,not equals,#N/A,Product Option,15875b77-691b-4c0a-92f7-22da60a8a8e1
+16d8d38e-92ba-4f0b-9d3c-90016d71fba9,f0380a7c-6736-4d93-8262-6cfb788d339d,Value,Standard,#N/A,#N/A,equals,Support_Level__c,Configuration Attributes,#N/A
+aa1bb6f6-3915-4358-8f10-8a77f42a47bd,73488d21-b66c-44ce-a442-112c5cccda6c,Value,0,#N/A,#N/A,equals,#N/A,#N/A,507ce2aa-392f-4514-9aa1-fc24b974a508
+a5eca38b-b6ad-4676-b6a2-b2dd30535ba6,73488d21-b66c-44ce-a442-112c5cccda6c,Value,0,#N/A,#N/A,greater than,#N/A,#N/A,f74930c8-9334-4a31-bf1b-f17ebd54873a
+b717fe56-b816-47e0-9ede-6ca763c30b09,eacc8e10-eb91-46b2-96d7-183f6db52932,Value,Premium,#N/A,#N/A,equals,Support_Level__c,Configuration Attributes,#N/A
+f781a3a6-89ce-4dc3-a46e-c8c4c83e9423,cc63e3b7-ec8b-4243-bc5b-53b0d7e17f0b,Value,5,#N/A,#N/A,less than,Unit Price,Product Option,#N/A
+b781a8bb-5925-4b8e-97d8-b3bea380d432,1fbc3b83-db34-4003-8d05-d2bb260591db,Value,0,#N/A,#N/A,greater than,#N/A,#N/A,24921220-93c7-4676-98e4-5c1b310d40d6
+6c92c8e4-29b7-4db5-9e4f-0ff0df41dce0,cc63e3b7-ec8b-4243-bc5b-53b0d7e17f0b,Variable,#N/A,d4f1f22a-3f31-4142-ac68-e450c6cacab0,#N/A,less than,Group Line Items,Quote,#N/A
+18318699-7135-4077-af3d-fc9e31ee6788,1fbc3b83-db34-4003-8d05-d2bb260591db,Value,0,#N/A,#N/A,equals,#N/A,#N/A,507ce2aa-392f-4514-9aa1-fc24b974a508
