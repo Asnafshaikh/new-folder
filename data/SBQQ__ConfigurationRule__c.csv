@@ -1,0 +1,7 @@
+Guid,SBQQ__ProductRule__c,SBQQ__Active__c,SBQQ__AscendingNestedLevel__c,SBQQ__DescendingActionNesting__c,SBQQ__DescendingNestedLevel__c,SBQQ__ProductFeature__c,SBQQ__Product__c
+5a40947e-a7b3-4f3e-b2ca-e12b74ed6c46,82d46a7f-5e8a-428c-baf7-28a78aeb6ed4,false,#N/A,#N/A,#N/A,885fed29-f357-4515-97d3-ef83f4ebda0d,23b84796-479a-452b-804f-6b3977e417e0
+858f0162-ecc2-420f-a87f-b89802898209,73488d21-b66c-44ce-a442-112c5cccda6c,true,#N/A,#N/A,#N/A,#N/A,3baf773e-6066-4ff6-b76f-21bc0c2c6949
+bec36801-eb78-48bb-93d8-75dce51bd7c2,82d46a7f-5e8a-428c-baf7-28a78aeb6ed4,true,#N/A,#N/A,#N/A,650ef5ff-0683-4eac-bf47-c07ef025937a,84ddf0aa-99c6-465c-a118-8343af3896a4
+56adc52a-7f93-409c-9986-58d3f2d1992d,eacc8e10-eb91-46b2-96d7-183f6db52932,true,#N/A,#N/A,#N/A,#N/A,3baf773e-6066-4ff6-b76f-21bc0c2c6949
+5b512b55-73c3-4cbe-8fda-8fb75115c6a8,f0380a7c-6736-4d93-8262-6cfb788d339d,true,#N/A,#N/A,#N/A,#N/A,3baf773e-6066-4ff6-b76f-21bc0c2c6949
+fb8ecb3f-008f-4060-a5e2-b4aadc12549d,1fbc3b83-db34-4003-8d05-d2bb260591db,true,#N/A,#N/A,#N/A,#N/A,3baf773e-6066-4ff6-b76f-21bc0c2c6949
