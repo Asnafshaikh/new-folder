@@ -1,0 +1,70 @@
+<apex:page controller="FDConnect.ListAllOpenTicketsCtrl"  sidebar="false">
+ <style type="text/css">
+            .customPopup {
+                background-color: white;
+                border-style: solid;
+                border-width: 2px;
+                left: 50%;
+                padding: 10px;
+                position: absolute;
+                z-index: 2;
+                /* These are the 3 css properties you will need to tweak so the pop 
+            up displays in the center of the screen. First set the width. Then set 
+            margin-left to negative half of what the width is. You can also add 
+            the height property for a fixed size pop up.*/
+                width: 868px;
+                margin-left: -442px;
+                top: 0px;
+            }
+            
+            .popupBg {
+                background-color: 1px solid #ededed;
+                opacity: 0.20;
+                filter: alpha(opacity=70);
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+        </style>
+<apex:form >
+<apex:actionStatus id="StatusId">
+                    <apex:facet name="start" >
+                        <img src="/img/loading.gif" style="margin-left:45%;z-index:3;" />
+                    </apex:facet>
+                </apex:actionStatus>
+    <apex:stylesheet value="{!URLFOR($Resource.FDConnect__bootstraplib, '/bootstrap/css/bootstrap.min.css')}" />
+<apex:pageBlock >
+ <apex:pageblocktable value="{!conlist}" var="con">
+ 
+ <apex:column value="{!con.name}" headerValue="Contact Name"/>   
+  <apex:column headerValue="Number of Open Ticket(s)" value="{!con.Fd_Tickets__r.size}"/>   
+<apex:column style="text-align:center;align:justify;width:200px;">
+                    <apex:commandLink value="View Tickets" styleclass="btn" style="width:90px;height:24px;" action="{!showReply}" rerender="popup" status="StatusId" >
+                          <apex:param name="conId" value="{!con.id}" assignTo="{!conId}" />                        
+                 </apex:commandLink> 
+                               
+                            </apex:column>
+ </apex:pageblocktable>
+ </apex:pageBlock>
+ <apex:outputPanel id="popup">
+                    <apex:outputPanel styleClass="popupBg" layout="block" rendered="{!displayPopUp}" />
+                    <apex:outputPanel styleClass="customPopup" layout="block" rendered="{!displayPopUp}">
+                     <apex:commandlink action="{!closePopup}" rerender="popup" style="margin-right:100px !important;">
+                            <apex:image url="{!$Resource.FDConnect__Close_Image}" width="20" height="20" style="float:right;" />
+                     </apex:commandlink>
+                     <apex:pageBlock >
+                     <apex:pageblockTable value="{!showCon.Fd_Tickets__r}" var="ticket">
+                     
+                     <apex:column value="{!ticket.FDConnect__Agent__c}" headerValue=" Assigned to"/>
+                     <apex:column value="{!ticket.Contact_Id__r.name}" headerValue="Created By"/>
+
+                     </apex:pageblockTable>
+                     <apex:outputLabel rendered="{!IF(showCon.Fd_Tickets__r.size=0,true,false)}">No Tickets</apex:outputLabel>
+                     </apex:pageBlock>
+                    </apex:outputPanel>
+                </apex:outputPanel>
+ </apex:form>
+</apex:page>

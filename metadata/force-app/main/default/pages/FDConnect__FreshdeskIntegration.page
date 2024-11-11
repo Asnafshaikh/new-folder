@@ -1,0 +1,47 @@
+<apex:page controller="FDConnect.FreshdeskIntegrationCtrl" applyHtmlTag="true" sidebar="false">
+    <style>
+        .message {
+            width: 625px !important;
+            margin-left: 91px !important;
+        }
+    </style>
+    <div >
+        <div style="padding-bottom:20px;">
+        </div>
+        <div >
+            <h1 style="color:#337ab7;font-size:20px;font-weight:light;"> Freshdesk for Salesforce </h1>
+        </div><apex:actionStatus id="StatusId">
+                                <apex:facet name="start">
+                                    <img src="/img/loading.gif" />
+                                </apex:facet>
+                            </apex:actionStatus>
+        <br/><br/>
+        <div >
+            <apex:form >
+
+                <apex:outputPanel id="PanelId">
+                    <apex:pageMessages ></apex:pageMessages>
+                </apex:outputPanel>
+
+                <div style="margin-left:100px;">
+                    <label style="display: inline-block; max-width: 100%;margin-bottom: 5px;font-weight: 700;font-size: 15px;">FRESHDESK URL*</label>
+                    <apex:inputText value="{!endPoint}"  style="margin-left:30px;display: block; width: 500px; height: 20px; padding: 6px 12px; font-size: 14px;line-height: 1.42857143;color: #555;background-color: #fff;background-image: none;border: 1px solid #ccc;border-radius: 4px;"/>
+                </div>
+                <br/>
+                <div style="margin-left:100px;">
+                    <label style="display: inline-block; max-width: 100%;margin-bottom: 5px;font-weight: 700;font-size: 15px;">API KEY*</label>
+                    <apex:inputText value="{!keydata}" style="margin-left:30px;display: block; width: 500px; height: 20px; padding: 6px 12px; font-size: 14px;line-height: 1.42857143;color: #555;background-color: #fff;background-image: none;border: 1px solid #ccc;border-radius: 4px;" />
+                </div>
+                <div >
+                    <div >
+                    <br/>
+                        <apex:commandButton value="Authorize" reRender="PanelId" status="StatusId" action="{!FreshdeskInt}" style="margin-left:500px;width:100px;height:30px;font-size:13px;">
+
+                            
+                        </apex:commandButton>
+                    </div>
+                </div>
+            </apex:form>
+        </div>
+    </div>
+</apex:page>

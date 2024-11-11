@@ -1,0 +1,75 @@
+<apex:page standardController="FDConnect__Fd_Ticket__c" extensions="FDConnect.UpdateTicketCtr" sidebar="false" >
+  <style>
+      .text{
+          margin-left: 89px;
+          margin-top: -25px;
+          display: block; 
+          width: 400px; 
+          height: 24px; 
+          padding: 6px 12px; 
+          font-size: 14px;
+          line-height: 1.42857143;
+          color: #555;
+          background-color: #fff;
+          background-image: none;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+      }
+  </style>
+  <div >  
+    <apex:form style="margin-left: 50px;">
+      <apex:pageMessages >
+      </apex:pageMessages>
+      <h3 style='font-size:x-large;margin-left: -40px;'>Update Ticket
+      </h3>
+      <br/>
+      <br/>
+        <div style='font-size:20px;'>
+          <label >Email*
+          </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+          <apex:outputText value="{!HTMLENCODE(Fd_Ticket.Contact_Id__r.email)}" />
+        </div><br/><br/>
+        <div style='font-size:20px;'>
+          <label >Subject*
+          </label>&nbsp;&nbsp;&nbsp;
+          <apex:inputText value="{!Fd_Ticket.FDConnect__Ticket_Subject__c}" styleClass="text"/>
+        </div><br/><br/>
+        <div style='font-size:20px;width:700px;'>
+          <label >Description*
+          </label>
+          <apex:inputTextarea value="{!Fd_Ticket.FDConnect__Ticket_Description__c}"  richText="true" />
+        </div><br/><br/>
+        <div >
+          <div style='font-size: 20px;'>
+            <label >Status
+            </label>
+            <apex:selectList value="{!status}"  multiselect="false" size="1" style="height:24px;">
+              <apex:selectoptions value="{!statusVal}" />
+            </apex:selectList>&nbsp;&nbsp;&nbsp;&nbsp;
+            <label >Priority
+            </label>
+            <apex:selectList value="{!Priority}" multiselect="false" size="1" style="height:24px;">
+              <apex:selectOptions value="{!priorityVal}" />
+            </apex:selectList>&nbsp;&nbsp;&nbsp;&nbsp;
+            <label >Source
+            </label>
+            <apex:selectList value="{!Fd_Ticket.FDConnect__Source__c}"  multiselect="false" size="1" style="height:24px;">
+              <apex:selectOptions value="{!sourceVal}" />
+            </apex:selectList>&nbsp;&nbsp;&nbsp;&nbsp;
+             <label >Type
+            </label>
+            <apex:selectList value="{!Fd_Ticket.FDConnect__Ticket_Type__c}"  multiselect="false" size="1" style="height:24px;">
+              <apex:selectOptions value="{!typesVal}"/>
+            </apex:selectList>
+          </div>
+        </div>
+        <br/><br/>
+        <div >        
+          <div style='margin-left:420px;'>
+            <apex:commandButton value="Update Ticket" action="{!UpdateTicket}" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            <apex:commandButton value="Cancel" action="{!Cancel}"/>
+          </div>
+        </div>
+    </apex:form>
+  </div>
+</apex:page>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>List All Tickets</label>
+    <motif>Custom45: Ticket</motif>
+    <page>FDConnect__ListAllOpenTickets</page>
+</CustomTab>

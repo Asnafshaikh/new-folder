@@ -1,0 +1,37 @@
+<apex:page sidebar="false">
+<div style="background:whitesmoke">
+  <div style="margin-left:100px;margin-right:100px;background:whitesmoke;border-radius:10px !important;">
+     <apex:image url="{!$Resource.FDConnect__FreshConnectLogo}" width="100%" height="200px;" style="border-radius: 10px;"/>
+     <div style="background:azure !important;font-size:16px;align:justify;font-family:helvetica neue;margin-top: 23px;border-radius:10px;"><!-- style="background:#FC9A95;"  -->
+     <div style="margin-left:130px;">
+     <br/>
+   <p style="font-size:20px;align:justify;margin-right:100px;margin-top:20px;font-family:helvetica neue;">  FreshConnect is a Salesforce Application. This app is useful to connect Salesforce with Freshdesk and Freshdesk with Salesforce. It supports point and click graphical user interface which is easy and simple to use.</p>
+        <p style="font-size:20px;align:justify;margin-right:100px;font-family:helvetica neue;">
+        This app is providing bidirectional sync functionality i.e. Salesforce to Freshdesk and Freshdesk to Salesforce.
+        <br/> <br/>
+        User can perform the following operation like Create Ticket, Update Ticket, View Ticket(s) Reply, Create Reply, Create Private Note for any Contact record(s) of Salesforce.
+     <br/><br/>
+     <b> Required Settings</b><br/>
+    <br/>
+      <!--<b>1.</b> Goto <b>Setup > in Administer > Security Controls > Remote Site Settings</b> and  add Freshdesk URL (eg : https://domainname.freshdesk.com)<br/>-->
+                  <b>1.</b> Goto <b>Setup > Named Credentials >  you can find  named  credentials "FreshTest" > basicAuth > Principals Section > action > edit > </b> and  add parameters <br/>
+
+      <b>2.</b>  Before creating OR fetching tickets  from Freshdesk, Please ensure that there should be valid email id on contact record. 
+      <br/><br/>
+     <b> Instructions : </b>
+     <br/>
+      Before Using the Freshdesk API Please Follow the below Steps :
+      <br/>
+      <apex:form style="font-family:helvetica neue;font-size:20px;">
+          <b>1.</b> User need to Authorize with Freshdesk Before Using Freshdesk API. <br/>
+          <b>2.</b> To Authorize Freshdesk, goto Freshdesk Configuration Tab.<br/>
+          <b>3.</b> Enter Freshdesk URL, API Key and then Click on Authorize button.<br/>
+          <b>4.</b> For Detailed Information about API Key/Freshdesk URL. Please refer User Manual.
+      </apex:form>
+      <br/><br/><br/>
+      </p>
+    </div>
+    </div>
+ </div>
+ </div>
+</apex:page>

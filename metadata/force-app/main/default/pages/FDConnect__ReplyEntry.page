@@ -1,0 +1,38 @@
+<apex:page sidebar="false" standardcontroller="FDConnect__Fd_Ticket__c" extensions="FDConnect.CreateReplyCntrl">
+  <div >  
+    <apex:form >
+      <apex:pageMessages >
+      </apex:pageMessages>
+      <br/>
+      <apex:outputLabel rendered="{!!noteVar}">
+        <h3 style='font-size: x-large; font-family: inherit;font-weight: 500;color: #337ab7;'>Create Reply
+        </h3>
+      </apex:outputLabel>
+      <apex:outputLabel rendered="{!noteVar}">
+        <h1 style='font-size: x-large; font-family: inherit;font-weight: 500;color: #337ab7;'>Create Note
+        </h1>
+      </apex:outputLabel>
+      <br/>
+      <br/>
+        <div style='font-size: 20px;margin-left:70px;'>
+          <label ><h3 style="font-size: x-large; font-family: inherit;font-weight: 500;">Subject</h3>
+          </label> &nbsp;&nbsp; &nbsp;&nbsp;
+          <apex:outputText value="{!HTMLENCODE(fd.FDConnect__Ticket_Subject__c)}" />
+        </div><br/><br/>
+        <div style='font-size: 20px;margin-left:70px;'>
+          <label ><h3 style="font-size: x-large; font-family: inherit;font-weight: 500;">Status</h3>
+          </label>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <apex:outputText value="{!HTMLENCODE(fd.FDConnect__Ticket_Status__c)}" />
+        </div>
+        <br/><br/>
+        <div style="width: 700px !important;font-size: 20px;margin-left:70px;"> 
+          <label ><h3 style="font-size: x-large; font-family: inherit;font-weight: 500;">Description*</h3>
+          </label><br/><br/>
+          <apex:inputTextarea value="{!body}"  richText="true"  style="margin-left:70px;" />
+        </div><br/>
+        <apex:commandButton value="Submit" action="{!createReply}"  rendered="{!!noteVar}" style="margin-left:500px;width:100px;height:30px;font-size: 15px"/>
+        <apex:commandButton value="Submit" action="{!createReply}"  rendered="{!noteVar}" style="margin-left:500px;width:100px;height:30px;font-size: 15px"/>
+        <apex:commandButton value="Cancel" action="{!Cancel}" style="width:100px;height:30px;font-size: 15px"/>
+    </apex:form>
+  </div>
+</apex:page>

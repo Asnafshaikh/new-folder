@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>FDConnect__Fresh_Connect</defaultLandingTab>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>FreshConnect</label>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>FDConnect__Freshdesk_Configuration</tabs>
+    <tabs>FDConnect__Fd_Ticket__c</tabs>
+    <tabs>FDConnect__RemoteAuth__c</tabs>
+    <tabs>FDConnect__List_All_Tickets</tabs>
+    <tabs>FDConnect__Fresh_Connect</tabs>
+    <tabs>FE_Release_Test</tabs>
+    <tabs>PDRI__Managed_Environment__c</tabs>
+</CustomApplication>

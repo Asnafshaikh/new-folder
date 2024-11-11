@@ -1,0 +1,143 @@
+<apex:page standardController="Contact" extensions="FDConnect.FreshdeskActionCtrl" sidebar="false">
+  <!-- <apex:stylesheet value="{!URLFOR($Resource.bootstraplib, '/bootstrap/css/bootstrap.min.css')}" /> -->
+  <style>
+    tr.headerRow th {
+      background: #bdc3c7 !important;
+      color: #7f8c8d !important;
+      font-weight: bolder !important;
+      font-size: 18px !important;
+      text-align: center;
+    }
+    .overDueClass {
+      background-color: #FC9A95 !important;
+    }
+    .normalClass {
+      background-color: ##ECF0F1 !important;
+    }
+    .customPopup {
+      background-color: white;
+      border-style: solid;
+      border-width: 2px;
+      left: 50%;
+      padding: 10px;
+      position: absolute;
+      z-index: 9999;
+      width: 868px;
+      margin-left: -442px;
+      top: 0px;
+    }
+    .popupBg {
+      background-color: 1px solid #ededed;
+      opacity: 0.20;
+      filter: alpha(opacity=70);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 9998;
+    }
+    .styleButton{
+        line-height: 4;text-decoration: none;
+    }
+  </style>
+  <apex:form >
+    <div >
+      <apex:pageBlock title="Freshdesk Action" id="FormOverDue" >
+        <h3 style='font-size:x-large;'>Perform Operation 
+        </h3>
+        <apex:actionStatus id="StatusId">
+          <apex:facet name="start">
+            <img src="/img/loading.gif" />
+          </apex:facet>
+        </apex:actionStatus>
+        <div style="margin-left:980px  !important;">
+          <Apex:outputLabel rendered="{!IF((wrapperList != null ),true,false)}" style="font-size: 20px;">
+            <apex:image url="{!$Resource.FDConnect__OverDueImage}" width="100px" height="20px"  style="border: 1px solid;border-radius: 10px"/>&nbsp;&nbsp;&nbsp; 
+            <apex:outputtext >OverDue Ticket(s)
+            </apex:outputtext>
+          </Apex:outputLabel>
+        </div>
+        <br/>
+        <br/>
+        <apex:outputPanel id="errorMsg" style="margin-top:-30px;">
+          <apex:pageMessages >
+          </apex:pageMessages>
+        </apex:outputPanel>
+        <div style="margin-top:0px;">
+          <apex:commandButton value="Create New Ticket" action="{!createNewTicket}" status="StatusId" style="height: 30px;font-size: 15px;"/>
+          <apex:commandButton value="Get All Ticket " action="{!retrieveTicket}" style="margin-left:30px;height: 30px;font-size: 15px;" reRender="tResponse,errorMsg,FormOverDue" status="StatusId" />
+        </div>
+        <apex:outputPanel id="nTicket">
+          &nbsp;&nbsp; {!cResponse}
+        </apex:outputPanel>
+        <br/>
+        <apex:outputPanel id="popup">
+          <apex:outputPanel styleClass="popupBg" layout="block" rendered="{!displayPopUp}" />
+          <apex:outputPanel styleClass="customPopup" layout="block" rendered="{!displayPopUp}">
+            <apex:commandlink action="{!closePopup}" rerender="popup" style="margin-right:100px !important;" status="StatusId">
+              <apex:image url="{!$Resource.FDConnect__Close_Image}" width="20" height="20" style="float:right;" />
+            </apex:commandlink>
+            <apex:pageblockTable value="{!WrapperReplyParserList}" var="RecList" rendered="{!IF(WrapperReplyParserList.size>0,true,false)}">
+              <apex:column headervalue="Replies " style="align:justify !important;font-size:15px;width:60%;">
+                <apex:outputText value="{!(RecList.body_text1)}"  />
+              </apex:column>
+              <apex:column headervalue="Response date" value="{!RecList.updatedResponseDate}" style="text-align:center;align:justify;font-size: 15px;width:20%;" />
+              <apex:column style="text-align:center;align:justify;width:100%;" headerValue="Related Attachment(s)">
+                <apex:repeat value="{!RecList.AttachemntListClass}" var="attach">
+                  <apex:outputLink value="{!attach.attachment_url}" target="_blank" style="font-size: 15px;">{!attach.name}
+                  </apex:outputLink>
+                  <br/>
+                </apex:repeat>
+              </apex:column>
+            </apex:pageblockTable>
+            <apex:pageblock >
+              <apex:outputlabel rendered="{!IF(WrapperReplyParserList.size<=0,true,false)}" style="margin-left:172px;font-size: 20px;">Ticket is yet to be reviewed by corresponding agent!
+              </apex:outputlabel>
+            </apex:pageblock>
+          </apex:outputPanel>
+        </apex:outputPanel>
+        <apex:outputPanel id="tResponse">
+          <br/>
+          <apex:outputPanel rendered="{!IF((wrapperList != null ),true,false)}" style="font-size: 15px !important;">
+            <apex:outputlabel style="margin-left: 750px;  margin-top: -32px;font-size: 22px !important;">Ticket(s) Related to Contact : {!con.name}
+            </apex:outputlabel>
+            <apex:pageblockTable value="{!NewWrapperList}" var="Rec">
+              <div style="border: 1px solid ##ECF0F1;border-radius:50px !important">
+                <apex:column style="text-align:center;align:justify;width:200px;" styleClass="{!IF(Rec.Isoverdue == true,'overDueClass','normalClass')}">
+                  <apex:commandLink value="Create Reply" styleclass="btn" style="width:90px;height:20px;text-decoration: none;line-height:2;" action="{!createReply}">
+                    <apex:param name="TicketId" value="{!Rec.ID}" assignTo="{!ReplyID}" />
+                  </apex:commandLink>
+                  <apex:commandLink value="Create Note" styleclass="btn" style="width:90px;height:20px;text-decoration: none;line-height:2;" action="{!createNote}">
+                    <apex:param name="TicketId" value="{!Rec.ID}" assignTo="{!ReplyID}" />
+                  </apex:commandLink>
+                  <br/>
+                  <apex:commandLink value="View Replies" styleclass="btn" style="width:90px;height:20px;margin-left: -52px !important;line-height: 4;text-decoration: none;" action="{!showReply}" rerender="popup" status="StatusId">
+                    <apex:param name="TicketId" value="{!Rec.tID}" assignTo="{!ReplyID}" />
+                  </apex:commandLink>
+                  <apex:commandLink value="Edit" styleclass="btn" style="width:55px;height:20px;line-height: 4;text-decoration: none;" action="{!UpdateTicket}">
+                    <apex:param name="TicketId" value="{!Rec.id}" assignTo="{!TicketId}" />
+                  </apex:commandLink>
+                </apex:column>
+                <apex:column headervalue="Subject" value="{!Rec.subject}" style="text-align:center;align:justify;" styleClass="{!IF(Rec.Isoverdue == true,'overDueClass','normalClass')}"/>
+                <apex:column headervalue="Status" value="{!Rec.status}" style="text-align:center;align:justify;" styleClass="{!IF(Rec.Isoverdue == true,'overDueClass','normalClass')}"/>
+                <apex:column headervalue="Priority" value="{!Rec.priority}" style="text-align:center !important;text-align:justify;" styleClass="{!IF(Rec.Isoverdue == true,'overDueClass','normalClass')}"/>
+                <apex:column headervalue="Type" value="{!Rec.TicketType}" style="text-align:center !important;text-align:justify;" styleClass="{!IF(Rec.Isoverdue == true,'overDueClass','normalClass')}"/>
+                <apex:column headervalue="Description" value="{!Rec.description}" style="width:200px !important;text-align:justify !important;" title="{!Rec.descriptionNew}" styleClass="{!IF(Rec.Isoverdue == true,'overDueClass','normalClass')}"/>
+                <apex:column headervalue="Agent Name" value="{!Rec.agentname}" style="text-align:center !important;text-align:justify;" styleClass="{!IF(Rec.Isoverdue == true,'overDueClass','normalClass')}"/>
+                <apex:column headervalue="Created Date" value="{!Rec.Createddate}" style="text-align:center !important;text-align:justify;" styleClass="{!IF(Rec.Isoverdue == true,'overDueClass','normalClass')}"/>
+                <apex:column headervalue="Response Date" value="{!Rec.Updateddate}" style="text-align:center !important;text-align:justify;" styleClass="{!IF(Rec.Isoverdue == true,'overDueClass','normalClass')}"/>
+                <apex:column headervalue="Due Date" value="{!Rec.Duedate}" style="text-align:center !important;text-align:justify;" styleClass="{!IF(Rec.Isoverdue == true,'overDueClass','normalClass')}"/>
+              </div>
+            </apex:pageblockTable>
+            <apex:outputPanel >
+              <apex:commandButton value="<<Previous" action="{!previous}" rendered="{!hasPrevious}" reRender="tResponse" status="StatusId" style="margin-left:1100px;" />
+              <apex:commandButton value="Next >>" action="{!next}" rendered="{!hasNext}" reRender="tResponse"  status="StatusId" style="float:right;" />
+            </apex:outputPanel>
+          </apex:outputPanel>
+        </apex:outputPanel>
+        <br/>
+      </apex:pageBlock>
+    </div>
+  </apex:form>
+</apex:page>
