@@ -1,0 +1,13 @@
+Guid,SBQQ__Rule__c,SBQQ__FilterField__c,SBQQ__FilterValue__c,SBQQ__Operator__c,SBQQ__Product__c,SBQQ__Required__c,SBQQ__Type__c,SBQQ__ValueField__c,SBQQ__ValueObject__c
+a32437f4-76b6-4d0b-beb4-c7f3a21ebf57,cc63e3b7-ec8b-4243-bc5b-53b0d7e17f0b,#N/A,#N/A,#N/A,#N/A,false,Enable,#N/A,#N/A
+5dd60e0b-de21-4902-b479-edc29d7487dd,82d46a7f-5e8a-428c-baf7-28a78aeb6ed4,#N/A,#N/A,#N/A,23b84796-479a-452b-804f-6b3977e417e0,false,Enable,#N/A,#N/A
+223e3b0e-192b-4962-aef7-95330d76d555,f0380a7c-6736-4d93-8262-6cfb788d339d,#N/A,#N/A,#N/A,66ddb854-76fd-4410-b9fb-6ac7c069cbc4,false,Remove,#N/A,#N/A
+bc142b01-67fd-4e4e-aa80-f5e57995bc88,f0380a7c-6736-4d93-8262-6cfb788d339d,#N/A,#N/A,#N/A,4a9d96bd-2f2a-4d97-bfc5-8457d3820078,true,Add,#N/A,#N/A
+8435101e-d74b-4951-971c-8427c261da80,eacc8e10-eb91-46b2-96d7-183f6db52932,#N/A,#N/A,#N/A,4a9d96bd-2f2a-4d97-bfc5-8457d3820078,false,Remove,#N/A,#N/A
+8518c113-61e8-4368-af4a-3139bc1d31bd,cc63e3b7-ec8b-4243-bc5b-53b0d7e17f0b,#N/A,#N/A,#N/A,#N/A,false,Add,#N/A,#N/A
+7aa2acd5-d958-4914-90d7-9be9f9e13695,eacc8e10-eb91-46b2-96d7-183f6db52932,#N/A,#N/A,#N/A,66ddb854-76fd-4410-b9fb-6ac7c069cbc4,true,Add,#N/A,#N/A
+5e8b3f14-7610-4a10-8b00-dd24f9320f96,db2ee4b1-3808-4cee-9d20-1751cebad910,#N/A,#N/A,#N/A,#N/A,false,Add,#N/A,#N/A
+f53fd963-450c-48b7-9247-5597c4384f03,82d46a7f-5e8a-428c-baf7-28a78aeb6ed4,#N/A,#N/A,#N/A,84ddf0aa-99c6-465c-a118-8343af3896a4,false,Add,#N/A,#N/A
+581b233b-b565-4033-b997-400d5e531d76,cc63e3b7-ec8b-4243-bc5b-53b0d7e17f0b,#N/A,#N/A,#N/A,#N/A,false,Add,#N/A,#N/A
+229c112d-183f-4460-89ce-39d79e75e139,d6da624f-b34c-4bd0-b977-241582b07b30,#N/A,#N/A,#N/A,#N/A,false,Add,#N/A,#N/A
+614d39c6-edd8-44c6-84b2-1f13b651af8f,cc63e3b7-ec8b-4243-bc5b-53b0d7e17f0b,#N/A,#N/A,#N/A,#N/A,false,Remove,#N/A,#N/A
